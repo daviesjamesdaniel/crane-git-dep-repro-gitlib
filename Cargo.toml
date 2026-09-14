@@ -1,8 +1,6 @@
-[package]
-name = "gitlib"
-version = "0.1.0"
-edition = "2021"
+[workspace]
+resolver = "2"
+members = ["gitlib", "other"]
 
-[dependencies]
-itoa = "1"
+[workspace.dependencies]
 serde = { version = "1", features = ["derive"] }
